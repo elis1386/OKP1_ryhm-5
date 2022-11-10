@@ -1,8 +1,14 @@
-
 /* view more picture button */
 function viewMore() {
-  const gallery2 = document.querySelector(".gallery2");
-  gallery2.style.display = "grid";
+  if (window.screen.width <= 425) {
+    const gallery2 = document.querySelector(".gallery2");
+    gallery2.style.display = "flex";
+  }
+  else{
+    const gallery2 = document.querySelector(".gallery2");
+    gallery2.style.display = "grid";
+  }
+ 
 }
 
 /* Show modal windows f */
@@ -12,43 +18,31 @@ function sendMessageModal() {
 }
 
 /* Close modal window f */
-function closeModal()
-{
-    const closeModal = document.querySelector('#clodeModal')
-    closeModal.closeModal()
+function closeModal() {
+  const closeModal = document.querySelector("#clodeModal");
+  closeModal.closeModal();
 }
 
+let count = document.querySelector("#count");
 
-
-let count = document.querySelector('#count')
-
-function showCartModal()
-{   
-  let amount = count.textContent
-  if(amount == 0)
-  {
-    const cartDialog = document.querySelector('#cart_dialog')
-    cartDialog.showModal()
+function showCartModal() {
+  let amount = count.textContent;
+  if (amount == 0) {
+    const cartDialog = document.querySelector("#cart_dialog");
+    cartDialog.showModal();
+  } else {
+    const cartDialog2 = document.querySelector(".cart_dialog2");
+    cartDialog2.showModal();
   }
-  else{
-    const cartDialog2 = document.querySelector('.cart_dialog2')
-    cartDialog2.showModal()
-  }
-  
 }
 
 /* Add product to the basket */
 
 // increase baskets count
-function increaseCount()
-{
-  count.textContent++
+function increaseCount() {
+  count.textContent++;
 }
-let basket  = {}
+let basket = {};
 
-// total amount 
-function totalSum()
-{
-
-}
-
+// total amount
+function totalSum() {}

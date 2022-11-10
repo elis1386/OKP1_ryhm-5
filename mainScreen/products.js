@@ -10,6 +10,7 @@
  const products = [
     {
         title: 'Product 1',
+        image: ""
         name: 'photo 1',
         price: 220,
     },
