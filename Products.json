@@ -5,7 +5,6 @@ const products = [
     name: "Beautifull moon",
     price: 20,
   },
-
   {
     title: 1,
     image: "https://unsplash.com/photos/6NIYK9PMJaU",
