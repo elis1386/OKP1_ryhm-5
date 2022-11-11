@@ -110,12 +110,12 @@ tr {
   gap: 2rem;
   font-size: 1rem;
 }
-.product_amount_title , .total{
+.product_amount_title,
+.total {
   margin: 0.5rem 0;
   font-size: 1rem;
   font-weight: 600;
 }
-
 
 /* MAIN SCREEN */
 .main_photo {
@@ -407,55 +407,62 @@ dialog::backdrop {
   color: rgb(12, 184, 12);
 }
 
-
-@media screen  and (max-width: 768px){
-  .gallery1, .gallery2
-  {
+@media screen and (max-width: 768px) {
+  .gallery1,
+  .gallery2 {
     grid-template-columns: repeat(19, 1fr);
     grid-template-rows: repeat(9, 6vw);
   }
-  .view_more_btn
-  {
+  .view_more_btn {
     margin-left: 25%;
   }
-  .main_text{
+  .main_text {
     font-size: 3rem;
     text-align: center;
     left: 5%;
   }
 }
-@media screen and (max-width: 425px){
-  .gallery1
-  {
+@media screen and (max-width: 425px) {
+  .gallery1 {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
     width: 35%;
   }
-  .gallery2{
+  .gallery2 {
     margin-top: 3rem;
     display: none;
     flex-direction: column;
     width: 35%;
   }
-  .view_more_btn
-  {
+  .view_more_btn {
     margin-left: 12%;
   }
   .gallery_title p {
     font-size: 0.8rem;
     margin-top: 0.5rem;
-
   }
   .main_text {
     font-size: 2.4rem;
     text-align: center;
-}
-.fa-cart-shopping{
-  display: none;
-}
-.logo-text
-{
-  display: none;
-}
+  }
+  .fa-cart-shopping {
+    display: none;
+  }
+  .logo-text {
+    display: none;
+  }
+  .cart_dialog {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 34%;
+    height: 59%;
+    text-align: center;
+  }
+  .footer_dialog
+  {
+    position: absolute;
+    top: 50%;
+  }
 }

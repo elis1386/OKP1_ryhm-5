@@ -12,6 +12,7 @@
       crossorigin="anonymous"></script>
   </head>
   <body class="container">
+    <!-- HEADER ALKAA-->
     <header class="header_bar">
       <figure class="logo">
         <i class="fa-brands fa-slack"></i>
@@ -55,6 +56,9 @@
         <p class="total">total:</p>
       </dialog>
     </header>
+    <!-- HEADER LOPPU -->
+
+    <!-- MAIN OSA ALKAA -->
     <section class="main_photo">
       <h1 class="main_text">Download hight resolution images</h1>
       <form action="" method="get" class="searchBar">
@@ -187,7 +191,9 @@
       </section>
         <a href="#"  class="view_more_btn" onclick="viewMore(); return false">View More</a>
     </section>
-    <!-- Footer -->
+     <!-- MAIN OSA LOPPU -->
+
+    <!-- FOOTER ALKAA -->
     <footer class="footer_bar">
       <p class="copy">&copy; All right reserved 2022</p>
       <ul class="social_media">
@@ -199,7 +205,7 @@
         <li><a href="" id="openModal" onclick="sendMessageModal(); return false"><i class="fa-solid fa-envelope"></i></a></li>
       </ul>
       <!-- Modal -->
-      <dialog id="dialog">
+      <dialog id="dialog" class="footer_dialog">
         <a href="" id="closeModal" class="close_modal" onclick="closeModal(); return false"><i class="fa-solid fa-xmark"></i></a>
         <article class="send_message_dialog">
               <p class="contact">Contact us</p>
@@ -213,6 +219,9 @@
         </article>
       </dialog>
     </footer>
+    <!-- FOOTER LOPPU -->
+
+    <script src="product.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,15 +1,19 @@
+const BaseUrl = "https://raw.githubusercontent.com/elis1386/OKP1_ryhm-5/main/Products.json"
+
+
 /* view more picture button */
 function viewMore() {
   if (window.screen.width <= 425) {
     const gallery2 = document.querySelector(".gallery2");
     gallery2.style.display = "flex";
-  }
-  else{
+  } else {
     const gallery2 = document.querySelector(".gallery2");
     gallery2.style.display = "grid";
   }
- 
 }
+
+
+
 
 /* Show modal windows f */
 function sendMessageModal() {
@@ -23,6 +27,8 @@ function closeModal() {
   closeModal.closeModal();
 }
 
+
+/* Cart modal */
 let count = document.querySelector("#count");
 
 function showCartModal() {
