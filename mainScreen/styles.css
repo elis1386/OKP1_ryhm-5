@@ -406,6 +406,27 @@ dialog::backdrop {
   background-color: #ffffff;
   color: rgb(12, 184, 12);
 }
+@media screen and (max-width: 2560px ) {
+  .cart_dialog{
+    top: -62%;
+    left: 47%;
+    width: 14%;
+    height: 15%
+  }
+  .cart_dialog2{
+    top: -62%;
+    left: 47%;
+    width: 14%;
+    height: 15%
+  }
+  }
+@media screen and (max-width:1024px) {
+  .cart_dialog{
+    top: -59%;
+    left: 42%;
+  }
+  
+}
 
 @media screen and (max-width: 768px) {
   .gallery1,
