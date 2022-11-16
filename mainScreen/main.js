@@ -6,10 +6,10 @@ function viewMore() {
   if (window.screen.width <= 425) {
     const gallery2 = document.querySelector(".gallery2");
     gallery2.style.display = "flex";
-  } else {
+  } /* else {
     const gallery2 = document.querySelector(".gallery2");
     gallery2.style.display = "grid";
-  }
+  } */
 }
 
 
@@ -52,3 +52,6 @@ let basket = {};
 
 // total amount
 function totalSum() {}
+
+
+fetch('BaseUrl',)
