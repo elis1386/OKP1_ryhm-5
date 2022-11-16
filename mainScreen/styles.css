@@ -178,7 +178,6 @@ button:before {
 
 /* RANDOM PHOTO GALLERY*/
 .random_photo {
-  width: 1240px;
   margin: auto;
 }
 .gallery1 {
@@ -406,7 +405,7 @@ dialog::backdrop {
   background-color: #ffffff;
   color: rgb(12, 184, 12);
 }
-@media screen and (max-width: 2560px ) {
+/* @media screen and (max-width: 2560px ) {
   .cart_dialog{
     top: -62%;
     left: 47%;
@@ -414,33 +413,44 @@ dialog::backdrop {
     height: 15%
   }
   .cart_dialog2{
-    top: -62%;
-    left: 47%;
+    top: -55%;
+    left: 40%;
     width: 14%;
     height: 15%
   }
+  }*/
+@media screen and (max-width: 1024px) {
+  .cart_dialog {
+    top: -50%;
+    left: 40%;
+    height: 20%;
   }
-@media screen and (max-width:1024px) {
-  .cart_dialog{
-    top: -59%;
-    left: 42%;
+  .cart_dialog2 {
+    top: -50%;
+    left: 40%;
+    width: 14%;
+    height: 20%;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
   .gallery1,
   .gallery2 {
-    grid-template-columns: repeat(19, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 6vw);
   }
   .view_more_btn {
-    margin-left: 25%;
+    margin-left: 43%;
   }
   .main_text {
     font-size: 3rem;
     text-align: center;
     left: 5%;
+  }
+  .cart_dialog, .cart_dialog2 {
+    top: -60%;
+    left: 0%;
+    height: 20%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -448,16 +458,16 @@ dialog::backdrop {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 100%;
   }
   .gallery2 {
     margin-top: 3rem;
     display: none;
     flex-direction: column;
-    width: 35%;
+    width: 100%;
   }
   .view_more_btn {
-    margin-left: 12%;
+    margin-left: 33%;
   }
   .gallery_title p {
     font-size: 0.8rem;
@@ -481,8 +491,7 @@ dialog::backdrop {
     height: 59%;
     text-align: center;
   }
-  .footer_dialog
-  {
+  .footer_dialog {
     position: absolute;
     top: 50%;
   }
