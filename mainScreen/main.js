@@ -1,29 +1,16 @@
-const BaseUrl = "https://raw.githubusercontent.com/elis1386/OKP1_ryhm-5/main/Products.json"
-
-
-/* view more picture button */
-function viewMore() {
-  if (window.screen.width <= 425) {
-    const gallery2 = document.querySelector(".gallery2");
-    gallery2.style.display = "flex";
-  } else {
-    const gallery2 = document.querySelector(".gallery2");
-    gallery2.style.display = "grid";
-  }
-}
 
 
 
 
-/* Show modal windows f */
+/* Show modal windows SEND A MESSAGE */
 function sendMessageModal() {
   const dialog = document.querySelector("#dialog");
   dialog.showModal();
 }
 
-/* Close modal window f */
+/* Close modal window SEND A MESSAGE */
 function closeModal() {
-  const closeModal = document.querySelector("#clodeModal");
+  const closeModal = document.querySelector("#closeModal");
   closeModal.closeModal();
 }
 
@@ -48,7 +35,4 @@ function showCartModal() {
 function increaseCount() {
   count.textContent++;
 }
-let basket = {};
 
-// total amount
-function totalSum() {}
