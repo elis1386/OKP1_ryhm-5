@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fb42ae3684.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="container">
+    <!-- HEADER ALKAA-->
+    <header class="header_bar">
+      <figure class="logo">
+        <i class="fa-brands fa-slack"></i>
+        <a href="#" class="logo-text">LovePicture</a>
+      </figure>
+      <figure class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <a href="#" class="cart-text" id="openModal" onclick="showCartModal(); return false">Cart<span id="count">0</span></a>
+      </figure>
+      <!-- Cart empty modal -->
+      <dialog id="cart_dialog" class="cart_dialog">
+        <a href="" id="closeModal" class="close_modal" onclick="closeModal(); return false"><i class="fa-solid fa-xmark"></i></a>
+        <article class="your_cart">
+              <h3 class="empty_cart_title">Your cart is empty</h3>
+              <i class="fa-regular fa-face-smile-wink"></i>
+              <p class="empty_cart_text">Let's do some shoping?</p>
+        </article>
+      </dialog>
+      <!-- Not empty dialog -->
+      <dialog id="cart_dialog" class="cart_dialog2">
+        <a href="" id="closeModal" class="close_modal" onclick="closeModal(); return false"><i class="fa-solid fa-xmark"></i></a>
+        <article class="your_cart2">
+              <h3 class="cart_title" id="inYourCart">In your cart</h3>
+        </article>
+        <hr>
+        <table class="product_amount">
+            <tr>
+              <th class="product_amount_title">Product</th>
+              <th class="product_amount_title">Price</th>
+            </tr>
+            <tr>
+              <td id="name">photo 1</td>
+              <td id="product_price">100</td>
+            </tr>
+            <tr>
+              <td id="name">photo 2</td>
+              <td id="product_price">80</td>
+            </tr>
+        </table>
+        <hr>
+        <p class="total">total:</p>
+      </dialog>
+    </header>
+    <!-- HEADER LOPPU -->
+
+    <!-- MAIN OSA ALKAA -->
+    <section class="main_photo">
+      <h1 class="main_text">Download hight resolution images</h1>
+      <form action="" method="get" class="searchBar">
+        <input name="search" class="search_input" placeholder="serching here..." type="search" />
+        <button type="submit" class="search_btn"></button>
+      </form>
+    </section>
+    <section class="random_photo">
+      <article class="gallery_title">
+        <h2 class="gallery_text">Latest Uploads</h2>
+        <p>Explore our photography by category all free for commercial use</p>
+      </article>
+      <section class="gallery" id="gallery">
+      </section>
+      <a href="#"  class="view_more_btn" onclick="viewMore(); return false">Load more photos</a>
+    </section>
+     <!-- MAIN OSA LOPPU -->
+
+    <!-- FOOTER ALKAA -->
+    <footer class="footer_bar">
+      <p class="copy">&copy; All right reserved 2022</p>
+      <ul class="social_media">
+        <li>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li><a href="" ></a><i class="fa-brands fa-instagram"></i></li>
+        
+        <li><a href="" id="openModal" onclick="sendMessageModal(); return false"><i class="fa-solid fa-envelope"></i></a></li>
+      </ul>
+      <!-- Modal with -->
+      <dialog id="dialog" class="footer_dialog">
+        <article class="send_message_dialog">
+          <a href="" id="closeModal" class="close_modal" onclick="closeModal();"><i class="fa-solid fa-xmark"></i></a>
+              <p class="contact">Contact us</p>
+              <form action="" class="send_letter_form">
+                <label for="email" class="email_label">Email address</label>
+                <input type="email" class="email">
+                <label for="text-area" class="text-area">Write your message here</label>
+                <textarea class="message_text"></textarea>
+            <a href="" id="closeModal" class="send_message_btn" onclick="closeModal(); return false">Send message</a>
+              </form>
+        </article>
+      </dialog>
+    </footer>
+    <!-- FOOTER LOPPU -->
+
+    <script src="../mainScreen/products.js"></script>
+    <script src="main.js"></script>
+    <script src="../mainScreen/productsCards.js"></script>
+  </body>
+</html>
+
+
+
+
