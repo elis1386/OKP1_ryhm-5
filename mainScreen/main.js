@@ -1,38 +1,49 @@
+  /* on this page all function wich shoul be in very pages */
 
-
-
-
-/* Show modal windows SEND A MESSAGE */
-function sendMessageModal() {
-  const dialog = document.querySelector("#dialog");
-  dialog.showModal();
-}
-
-/* Close modal window SEND A MESSAGE */
-function closeModal() {
-  const closeModal = document.querySelector("#closeModal");
-  closeModal.closeModal();
-}
-
-
-/* Cart modal */
-let count = document.querySelector("#count");
-
-function showCartModal() {
-  let amount = count.textContent;
-  if (amount == 0) {
-    const cartDialog = document.querySelector("#cart_dialog");
-    cartDialog.showModal();
-  } else {
-    const cartDialog2 = document.querySelector(".cart_dialog2");
-    cartDialog2.showModal();
+  /* MODAL FUNCTIONS */
+  function sendMessageModal() {
+    const dialog = document.querySelector("#dialog");
+    dialog.showModal();
   }
-}
 
-/* Add product to the basket */
+  /* COUNTING @ADD PRODUCT@ PRODUCTS  */
+  let count = document.querySelector('#count')
 
-// increase baskets count
-function increaseCount() {
-  count.textContent++;
-}
+  function increaseCount()
+  {
+    count.textContent++
+    console.log('click');
+  }
 
+  function showCartModal()
+  {   
+    let amount = count.textContent
+    if(amount == 0)
+    {
+      const cartDialog = document.querySelector('#cart_dialog')
+      cartDialog.showModal()
+    }
+    else{
+      const cartDialog2 = document.querySelector('.cart_dialog2')
+      cartDialog2.showModal()
+    }
+  }
+
+  function closeModal()
+  {
+      const closeModal = document.querySelector('#clodeModal')
+      closeModal.closeModal()
+  }
+
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
