@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Raleway:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  height: 100%;
+}
+.container {
+  font-size: 62.5%;
+  font-family: "Raleway";
+  line-height: normal;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  margin-bottom: -100px;
+}
+/* HEADER */
+.header_bar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.fa-slack {
+  font-size: 3rem;
+  color: white;
+}
+.fa-cart-shopping {
+  font-size: 2rem;
+  color: white;
+}
+.fa-heart {
+  font-size: 2rem;
+  color: white;
+}
+.logo {
+  display: flex;
+  margin-left: 2rem;
+}
+.logo-text {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+.cart {
+  margin-right: 2rem;
+}
+.cart-text {
+  margin-left: 0.8rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+}
+
+.cart-text span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background: #f5ae18;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  right: -8px;
+  top: -19px;
+  font-size: 1rem;
+}
+
+.cart_dialog {
+  position: fixed;
+  top: -45%;
+  left: 72%;
+  width: 20%;
+  height: 20%;
+  text-align: center;
+}
+.empty_cart_title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.empty_cart_text {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.fa-face-smile-wink {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cart_dialog2 {
+  background-color: #fff;
+  width: 20%;
+  height: 20%;
+  left: 75%;
+  top: -55%;
+  z-index: 1;
+  position: fixed;
+}
+.cart_title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.cart_table_title {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.product_amount,
+tr {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+}
+.product_amount_title,
+.total {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* Main section */
+.photo {
+  width: 50%;
+  margin: auto 2rem;
+}
+.description {
+  width: 50%;
+  margin-top: 5.2rem;
+}
+.description > * {
+  margin: 2rem 0 2rem 2rem;
+  font-size: 2rem;
+}
+.price {
+  margin-top: 1rem;
+}
+
+.current_photo {
+  display: flex;
+  height: 600px;
+}
+.photo img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin: 1rem auto;
+  border-radius: 2rem;
+}
+.photo img:hover {
+  filter: brightness(150%);
+}
+.fa-star {
+  color: #f5ae18;
+}
+.add_to_cart {
+  padding: 1rem;
+  background-color: #00a081;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  width: 30%;
+  text-align: center;
+  display: block;
+  margin-top: 2rem;
+}
+
+/* Footer */
+.footer_bar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  background-color: #000;
+}
+.copy {
+  color: white;
+  margin: 2rem;
+}
+.social_media {
+  display: flex;
+  gap: 3rem;
+  color: white;
+  margin: 2rem;
+}
+.fa-facebook,
+.fa-envelope {
+  color: white;
+}
+
+/* Modal Window */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+.send_message_dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.send_letter_form {
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.email_label,
+.text-area {
+  margin-bottom: 0.5rem;
+}
+.email {
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+}
+.message_text {
+  height: 30px;
+  padding: 1rem 3rem;
+}
+.send_message_btn {
+  border-radius: 1rem;
+  color: #ffffff;
+  background-color: rgb(12, 184, 12);
+  padding: 1rem;
+  width: 60%;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+.send_message_btn:hover {
+  border: 1px solid rgb(12, 184, 12);
+  background-color: #ffffff;
+  color: rgb(12, 184, 12);
+}
