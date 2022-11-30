@@ -4,12 +4,19 @@
   font-size: 62.5%;
   font-family: "Raleway";
   line-height: normal;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 1440px;
+  margin: 5rem auto;
 }
 /* HEADER */
+header{
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+}
 .header_bar {
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +46,7 @@
   text-align: center;
   text-decoration: none;
 }
+/* CART */
 .cart {
   margin-right: 2rem;
 }
@@ -49,8 +57,8 @@
   color: white;
   font-weight: 400;
   text-align: center;
+  
 }
-
 .cart-text span {
   display: inline-block;
   width: 20px;
@@ -64,22 +72,19 @@
   top: -19px;
   font-size: 1rem;
 }
-
+/* CART DIALOG */
 .cart_dialog {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  top: -50%;
-  left: 62%;
-  width: 15%;
-  height: 25%;
+  top: -45%;
+  left: 72%;
+  width: 20%;
+  height: 20%;
   text-align: center;
+  border: none;
+  background-color: #fff;
+  z-index: 1;
 }
-.close_modal
-{
-  text-align: end;
-  font-size: 1.5rem;
-}
+
 .empty_cart_title {
   font-size: 2rem;
   font-weight: 600;
@@ -95,12 +100,26 @@
 }
 .cart_dialog2 {
   background-color: #fff;
-  width: 20%;
-  height: 20%;
-  left: 75%;
-  top: -55%;
-  z-index: 1;
+  border: none;
+  left: 40%;
+  top: -75%;
   position: fixed;
+  font-size: 1rem;
+}
+.cartRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+.cartHeader {
+  font-weight: bold;
+}
+.cartTotal {
+  font-weight: bold;
+  text-align: right;
 }
 .cart_title {
   font-size: 1rem;
@@ -117,12 +136,12 @@ tr {
   gap: 2rem;
   font-size: 1rem;
 }
-.product_amount_title,
-.total {
+.product_amount_title , .total{
   margin: 0.5rem 0;
   font-size: 1rem;
   font-weight: 600;
 }
+
 
 /* MAIN SCREEN */
 .main_photo {
@@ -149,10 +168,6 @@ tr {
   margin: 0 auto;
   top: 45%;
   left: 15%;
-}
-datalist {
-  background-color: white;
-  width: 30%;
 }
 .search_input,
 .search_btn {
@@ -246,10 +261,10 @@ button:before {
 }
 .view_more_btn {
   padding: 1rem 2rem;
-  background-color: #f5ae18;
+  background-color: #00a081;
   color: white;
   display: inline-block;
-  margin-left: 40%;
+  margin-left: 45%;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -258,10 +273,9 @@ button:before {
 }
 .view_more_btn:hover {
   background-color: white;
-  border: 1px solid #f5ae18;
-  color: #f5ae18;
+  border: 1px solid #00a081;
+  color: #00a081;
 }
-
 /* Footer */
 .footer_bar {
   height: 100px;
@@ -295,6 +309,7 @@ dialog::backdrop {
 .send_message_dialog {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 .send_letter_form {
@@ -326,86 +341,9 @@ dialog::backdrop {
   display: block;
   text-align: center;
   margin: 1rem auto;
-  text-decoration: none;
 }
 .send_message_btn:hover {
-  border: 1px solid rgb(12, 184, 12);
+  border: 1px solid f5ae18;
   background-color: #ffffff;
-  color: rgb(12, 184, 12);
-}
-
-
-@media screen and (max-width: 1024px) {
-  .main_text{
-    font-size: 3.5rem;
-  }
-  .cart_dialog {
-    top: -49%;
-    left: 65%;
-    height: 26%;
-    width: 26%;
-  }
-  .cart_dialog2 {
-    top: -50%;
-    left: 40%;
-    width: 14%;
-    height: 20%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .gallery{
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .item{
-    width: 48%;
-  }
-  .main_text {
-    font-size: 3rem;
-    text-align: center;
-    left: 5%;
-  }
-  .cart_dialog, .cart_dialog2 {
-    top: -35%;
-    left: 58%;
-    height: 40%;
-  }
-}
-@media screen and (max-width: 425px) {
-  .gallery {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .item{
-    width: 100%;
-  }
-  .gallery_title p {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-  }
-  .main_text {
-    font-size: 2.4rem;
-    text-align: center;
-  }
-  .fa-cart-shopping {
-    display: none;
-  }
-  .logo-text {
-    display: none;
-  }
-  .cart_dialog {
-    top: -31%;
-    left: 35%;
-    width: 40%;
-    height: 40%;
-  }
-  .footer_dialog {
-    position: absolute;
-    top: 50%;
-  }
+  color: f5ae18;
 }
