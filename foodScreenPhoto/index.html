@@ -64,32 +64,20 @@
           €<span class="cartTotalValue">0</span>
       </article>
   </div>
-      <!-- Not empty dialog -->
-      <dialog id="cart_dialog" class="cart_dialog2 dialog2">
-        <a href="" id="closeModal" class="close_modal" onclick="closeModal(); return false"><i class="fa-solid fa-xmark"></i></a>
-        <article class="cart_row cart_header">
-          <p>Product name</p>
-          <p>Quantity</p>
-          <p>Price</p>
-          <p>Total</p>
-        </article>
-        <article class="cart_total">total:</article>
       </dialog>
     </header>
-    <section class="main_photo">
-      <h1 class="main_text">Download hight resolution images</h1>
-      <form action="../foodScreenPhoto/index.html" method="get" class="searchBar">
+    <!-- Search bar -->
+      <form action="" method="get" class="searchBar">
         <input name="search" class="search_input" placeholder="serching here..." type="search" />
-
         <button type="submit" class="search_btn"></button>
       </form>
-    </section>
+  </section>
     <section class="random_photo">
       <article class="gallery_title">
-        <h2 class="gallery_text">Latest Uploads</h2>
+        <h2 class="gallery_text">Food & Drink</h2>
         <p>Explore our photography by category all free for commercial use</p>
       </article>
-      <section class="gallery" id="gallery"></section>
+      <section class="gallery" id="food_gallery"></section>
     </section>
     <!-- Footer -->
     <footer class="footer_bar">
@@ -129,8 +117,8 @@
         </article>
       </dialog>
     </footer>
-    <script src="main.js"></script>
-    <script src="products.js"></script>
-    <script src="productsCards.js"></script>
+    <script src="../mainScreen/main.js"></script>
+    <script src="../mainScreen/products.js"></script>
+    <script src="foodScreen.js"></script>
   </body>
 </html>

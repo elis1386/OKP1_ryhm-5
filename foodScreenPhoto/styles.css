@@ -5,7 +5,7 @@
   font-family: "Raleway";
   line-height: normal;
   width: 1440px;
-  margin: 5rem auto;
+  margin: 0 auto;
 }
 /* HEADER */
 header{
@@ -14,6 +14,7 @@ header{
   z-index: 1;
   width: 100%;
   max-width: 1440px;
+
 }
 .header_bar {
   height: 80px;
@@ -84,28 +85,7 @@ header{
   background-color: #fff;
   z-index: 1;
 }
-.cart_row
-{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 10px;
-}
-.cart_header {
-  font-weight: bold;
-}
 
-.cart_total {
-  font-weight: bold;
-  text-align: right;
-}
-.close_modal
-{
-  text-align: end;
-  font-size: 1.5rem;
-}
 .empty_cart_title {
   font-size: 2rem;
   font-weight: 600;
@@ -141,19 +121,6 @@ header{
 .cartTotal {
   font-weight: bold;
   text-align: right;
-  left: 60%;
-  top: -65%;
-  z-index: 1;
-  position: fixed;
-  font-size: 1.4rem;
-  background: white;
-  padding: 10px;
-  border: 1px solid #ebebeb;
-  border-radius: 3px;
-}
-.dialog2 i
-{
-  margin-bottom: 1.4rem;
 }
 .cart_title {
   font-size: 1rem;
@@ -178,30 +145,19 @@ tr {
 
 
 /* MAIN SCREEN */
-.main_photo {
-  background: url(./image/mainPhoto.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
-  height: 600px;
-  width: 100%;
-  position: relative;
-  margin-bottom: 2rem;
-}
-.main_text {
-  color: white;
-  font-size: 4rem;
-  font-weight: 700;
-  position: absolute;
-  top: 20%;
-  left: 15%;
+
+.search {
+  margin-top: 1rem;
 }
 .searchBar {
   position: absolute;
-  width: 73%;
-  margin: 0 auto;
-  top: 45%;
-  left: 15%;
+  width: 50%;
+  margin: 1rem 25%;
+  top: 12%;
+}
+datalist {
+  background-color: white;
+  width: 30%;
 }
 .search_input,
 .search_btn {
@@ -214,6 +170,7 @@ tr {
   height: 42px;
   background: white;
   padding-left: 15px;
+  border: 1px solid grey;
 }
 button {
   height: 30px;
@@ -234,7 +191,7 @@ button:before {
 
 /* RANDOM PHOTO GALLERY*/
 .random_photo {
-  margin: auto;
+  margin-top: 10rem;
 }
 .gallery{
   margin: 4rem 0;

@@ -1,10 +1,9 @@
 /* PRODUCTS CARDS ADD TO THE PAGE */
-const pathToImages = "image";
-const pathToProductsImages = `${pathToImages}/gallery`;
-const items = document.querySelector("#gallery");
+const pathToProductsImages = "food";
+const items = document.querySelector("#food_gallery");
 
 
-function renderProducts(products)
+function renderFoodProducts(products)
 {
   products.forEach( product => {
     items.innerHTML += `
@@ -35,7 +34,7 @@ function addedProductHandler(event) {
   console.log(productId);
 }
 
-renderProducts(products, items)
+renderFoodProducts(products, items)
 
 
 
