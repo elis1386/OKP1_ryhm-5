@@ -37,7 +37,11 @@ function insertProductsIntoCart() {
 insertProductsIntoCart();
 
 
- 
+function showConfirmModal()
+{
+  const confirmModal = document.querySelector('#confirm')
+  confirmModal.showModal()
+}
    
  
 
