@@ -15,7 +15,7 @@ function currentPhotoMarkup(product) {
         <i class="fa-solid fa-star"></i>
         <i class="fa-regular fa-star"></i>
         <p class="price">${product.price}</p>
-        <a href="../cartPage/index.html";" class="add_to_cart">Add to cart</a>
+        <a href="../cartScreen/index.html?id=${product.id}" class="add_to_cart">Add to cart</a>
     </article>
 </article>
     `;

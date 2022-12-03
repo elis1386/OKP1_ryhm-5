@@ -150,9 +150,7 @@ tr {
   margin: 1rem auto;
   border-radius: 2rem;
 }
-.photo img:hover {
-  filter: brightness(150%);
-}
+
 .fa-star {
   color: #f5ae18;
 }

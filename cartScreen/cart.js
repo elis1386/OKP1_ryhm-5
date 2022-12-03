@@ -8,7 +8,7 @@ function renderNewProductToCart(product) {
   return `
   <article class="image-box">
   <img
-    src="${product.image}" class="cart_photo" />
+    src="${pathToProductsImages}/${product.image}" class="cart_photo" />
   </article>
   <article class="about">
     <h1 class="title">${product.name}</h1>
