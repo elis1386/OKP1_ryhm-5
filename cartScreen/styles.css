@@ -178,7 +178,7 @@ tr {
   justify-content: space-between;
   align-items: center;
 }
-.counter input{
+.counter input {
   width: 20%;
 }
 .quantity {
@@ -213,7 +213,7 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-.total h3{
+.total h3 {
   font-size: 2rem;
 }
 .items {
@@ -242,77 +242,112 @@ hr {
 }
 
 /* DIALOG */
-#confirm
-{
-  width: 400px;
-  height: 400px;
+#confirm {
+  width: 80%;
+  height: 70%;
   text-align: right;
   border: none;
 }
-.confirm_item
-{
+.confirm_item {
   display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.confirm_title
-{
+.confirm_title {
   font-size: 2.4rem;
   margin: 1rem;
-}
-.fa-xmark
-{
-  font-size: 1.4rem;
+  font-weight: 600;
 
 }
-.fa-champagne-glasses
-{
-  color: #f5ae18;
-  font-size: 3rem;
-  margin: 1rem;
-
+.fa-xmark {
+  font-size: 2rem;
 }
-.confirm_text, .confirm_text2{
+
+.confirm_text,
+.confirm_text2 {
   text-align: center;
   font-size: 2rem;
+  width: 70%;
+
+}
+.confirm_text2 {
+  margin-top: 1rem;
+}
+.order_info {
+  display: flex;
+  flex-direction: column;
+}
+.order_info_title {
+  font-size: 2rem;
+  margin: 0.5em;
+  text-align: center;
+  font-weight: 600;
+}
+.order_info_product {
+  display: flex;
   margin: 1rem;
+}
+.product_photo{
+  text-align: center;
+}
+.product_photo img {
+  width: 50%;
+}
+.product_text {
+  width: 90%;
+}
+.product_text h3, p{
+  width: 100%;
+  font-size: 2rem;
+  text-align: initial;
+  margin-bottom: 1rem;
+  color: #000;
 
 }
-.confirm_text2
+.product_text p{
+  width: 100%;
+  font-size: 2rem;
+  text-align: initial;
+  margin-top: 1rem;
+
+}
+.stars
 {
- margin-top: 1rem;
+  color: #f5ae18;
+  font-size: 2rem;
+  text-align: initial;
+}
+hr{
+  width: 100%;
 }
 
-@media screen and (max-width:768px) {
-  .cart_titles
-  {
+@media screen and (max-width: 768px) {
+  .cart_titles {
     font-size: 1.4rem;
   }
-  .action{
+  .action {
     font-size: 1rem;
   }
-  .title{
+  .title {
     font-size: 1rem;
     padding: 0;
   }
-  .counter input{
+  .counter input {
     width: 10%;
     padding: 0.5rem;
   }
-  .amount
-  {
+  .amount {
     font-size: 1.4rem;
     padding: 0;
   }
-  .total h3{
-   font-size: 1rem;
+  .total h3 {
+    font-size: 1rem;
   }
-  .total-amount{
+  .total-amount {
     font-size: 1.4rem;
   }
-  .button
-  {
+  .button {
     margin-top: 1.4rem;
   }
   .fa-cart-shopping {
@@ -321,7 +356,6 @@ hr {
   .logo-text {
     display: none;
   }
-  
 }
 
 /* Footer */
