@@ -349,25 +349,6 @@ dialog::backdrop {
 }
 
 @media screen and (max-width: 425px) {
-  .cart-text, .logo-text{
-    display: none;
-  }
-  .main_photo{
-    height: 900px;
-  }
-  .main_text{
-    top: 30%;
-  }
-  .item{
-    width: 98%;
-  }
-  .item__img{
-    height: 900px;
-  }
-
-}
-
-@media screen and (max-width: 375px) {
   .header_bar{
     height: 120px;
   }
@@ -396,12 +377,11 @@ dialog::backdrop {
     height: 50px;
     width: 50px;
   }
-  .item{
-    width: 96%;
+   .item{
+    width: 98%;
   }
   .item__img{
     height: 900px;
-    padding-top: 1rem;
   }
   .copy{
     display: none;
@@ -415,3 +395,16 @@ dialog::backdrop {
   }
 
 }
+
+@media screen and (max-width: 375px) {
+  .item{
+    width: 96%;
+  }
+  .item__img{
+    height: 900px;
+    padding-top: 1rem;
+  }
+
+
+}
+
