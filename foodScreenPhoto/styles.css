@@ -151,9 +151,10 @@ tr {
 }
 .searchBar {
   position: absolute;
-  width: 70%;
+  width: 1240px;
   margin: 1rem 5%;
   top: 100px;
+  max-width: 80%;
 }
 datalist {
   background-color: white;
