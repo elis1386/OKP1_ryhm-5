@@ -128,7 +128,9 @@ tr {
 }
 .description {
   width: 50%;
-  margin-top: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .description > * {
   margin: 2rem 0 2rem 2rem;
@@ -136,6 +138,20 @@ tr {
 }
 .price {
   margin-top: 1rem;
+}
+.product_title span {
+  color: grey;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.price span {
+  color: grey;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.stars span{
+  color: grey;
+  font-size: 1rem;
 }
 
 .current_photo {
@@ -160,11 +176,12 @@ tr {
   color: white;
   text-decoration: none;
   font-size: 1rem;
-  width: 30%;
+  width: 60%;
   text-align: center;
-  display: block;
-  margin-top: 2rem;
+  display: inline-block;
+  margin-top: 3rem;
 }
+
 
 /* Footer */
 .footer_bar {

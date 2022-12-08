@@ -17,7 +17,7 @@ function renderNewProductToCart(product) {
     <input type="text" placeholder="1" class="quantity" />
   </article>
   <article class="prices">
-    <p class="amount">$${product.price}</p>
+    <p class="amount">€${product.price}</p>
   </article>
   
     `;

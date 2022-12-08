@@ -65,20 +65,51 @@
     <!-- CONFIRM DIALOG -->
     <dialog id="confirm">
       <a
-        href="../mainScreenSoldPhoto/index.html"
+        href="../mainScreen/index.html"
         id="closeModal"
         class="close_modal"
         onclick="closeModal();">
         <i class="fa-solid fa-xmark"></i
       ></a>
-      <article class="confirm_item">
-        <h3 class="confirm_title">Congratulations!</h3>
-        <i class="fa-solid fa-champagne-glasses"></i>
+      <section class="confirm_item">
+        <h3 class="confirm_title">Your order is confirmed.</h3>
         <p class="confirm_text">
-          Now you are owner the best picture in the world!
+          Hi User, we've received order № A12094653 and are working on it now.
         </p>
-        <p class="confirm_text2">Soon it coming to you!</p>
-      </article>
+        <section class="order_info">
+          <p class="order_info_title">Items ordered</p>
+          <hr />
+          <article class="order_info_product">
+            <figure class="product_photo">
+              <img src="./gallery/0.jpeg" alt="" />
+            </figure>
+            <figcaption class="product_text">
+              <h3>"Beautifull moon"</h3>
+              <article class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>20€</p>
+              </article>
+            </figcaption>
+          </article>
+          <hr />
+        </section>
+        <section class="confirmattion_action">
+          <article class="print_hover">
+            <figure class="print"><i class="fa-solid fa-print"></i></figure>
+            <figcaption class="print_title">Print confirmation</figcaption>
+          </article>
+          <article class="save_hover">
+            <figure class="save"><i class="fa-solid fa-download"></i></figure>
+            <figcaption class="save_title">Save confirmation</figcaption>
+          </article>
+        </section>
+
+        <p class="confirm_text2">Thank you for ordering!</p>
+      </section>
     </dialog>
     <!-- FOOTER -->
     <footer class="footer_bar">
