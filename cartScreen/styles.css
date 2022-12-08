@@ -243,8 +243,8 @@ hr {
 
 /* DIALOG */
 #confirm {
-  width: 80%;
-  height: 70%;
+  width: 50%;
+  height: 80%;
   text-align: right;
   border: none;
 }
@@ -267,12 +267,13 @@ hr {
 .confirm_text,
 .confirm_text2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   width: 70%;
 
 }
 .confirm_text2 {
-  margin-top: 1rem;
+  margin-top: 5rem;
+  font-weight: 600;
 }
 .order_info {
   display: flex;
@@ -321,6 +322,29 @@ hr {
 hr{
   width: 100%;
 }
+.confirmattion_action{
+  display: flex;
+  gap: 5rem;
+  text-align: center;
+}
+.print, .save{
+  font-size: 2.4rem;
+  margin-top: 2rem;
+  color: rgb(63, 62, 62);
+}
+.print_title, .save_title{
+  font-size: 1.4rem;
+  margin: .5em 0 2rem 0;
+}
+.print_hover i:hover, .print_hover:hover{
+  color: #f5ae18;
+}
+.save_hover i:hover, .save_hover:hover{
+  color: #f5ae18;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
   .cart_titles {

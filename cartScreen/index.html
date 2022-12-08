@@ -65,17 +65,16 @@
     <!-- CONFIRM DIALOG -->
     <dialog id="confirm">
       <a
-        href="../mainScreenSoldPhoto/index.html"
+        href="../mainScreen/index.html"
         id="closeModal"
         class="close_modal"
         onclick="closeModal();">
         <i class="fa-solid fa-xmark"></i
       ></a>
-      <article class="confirm_item">
+      <section class="confirm_item">
         <h3 class="confirm_title">Your order is confirmed.</h3>
         <p class="confirm_text">
           Hi User, we've received order № A12094653 and are working on it now.
-          We'll email you an update when we've shipped it.
         </p>
         <section class="order_info">
           <p class="order_info_title">Items ordered</p>
@@ -96,10 +95,21 @@
               </article>
             </figcaption>
           </article>
-        <hr />
+          <hr />
         </section>
+        <section class="confirmattion_action">
+          <article class="print_hover">
+            <figure class="print"><i class="fa-solid fa-print"></i></figure>
+            <figcaption class="print_title">Print confirmation</figcaption>
+          </article>
+          <article class="save_hover">
+            <figure class="save"><i class="fa-solid fa-download"></i></figure>
+            <figcaption class="save_title">Save confirmation</figcaption>
+          </article>
+        </section>
+
         <p class="confirm_text2">Thank you for ordering!</p>
-      </article>
+      </section>
     </dialog>
     <!-- FOOTER -->
     <footer class="footer_bar">
