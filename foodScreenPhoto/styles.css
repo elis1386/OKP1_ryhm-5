@@ -152,9 +152,8 @@ tr {
 .searchBar {
   position: absolute;
   width: 1240px;
-  margin: 1rem 5%;
+  margin: 1rem 15%;
   top: 100px;
-  max-width: 80%;
 }
 datalist {
   background-color: white;
@@ -198,6 +197,7 @@ button:before {
   margin: 4rem 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   gap: 1rem;
 
@@ -337,4 +337,77 @@ dialog::backdrop {
   border: 1px solid f5ae18;
   background-color: #ffffff;
   color: f5ae18;
+}
+@media screen and (max-width: 768px) {
+  .main_photo{
+    height: 900px;
+  }
+  .main_text{
+    top: 30%;
+  }
+  .item{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header_bar{
+    height: 120px;
+  }
+  .fa-slack, .fa-cart-shopping{
+    font-size: 4rem;
+  }
+  .cart-text, .logo-text{
+    display: none;
+  }
+  .main_photo{
+    height: 900px;
+  }
+  .main_text{
+    top: 20%;
+    width: 60%;
+    font-size: 6rem;
+  }
+  .searchBar{
+    margin: 15% 20% 0;
+  }
+  .search_input{
+    padding: 2rem;
+  }
+  .search_btn{
+    height: 50px;
+    width: 50px;
+  }
+  .gallery_title{
+    margin-top: 18rem;
+  }
+   .item{
+    width: 98%;
+  }
+  .item__img{
+    height: 900px;
+  }
+  .copy{
+    display: none;
+  }
+  .footer_bar{
+    justify-content: end;
+  }
+  .social_media{
+    
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .item{
+    width: 96%;
+  }
+  .item__img{
+    height: 900px;
+    padding-top: 1rem;
+  }
+
+
 }
