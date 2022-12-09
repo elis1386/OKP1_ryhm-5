@@ -152,7 +152,7 @@ tr {
 .searchBar {
   position: absolute;
   width: 1240px;
-  margin: 1rem 15%;
+  margin: 1rem 4%;
   top: 100px;
 }
 datalist {
