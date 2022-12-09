@@ -7,14 +7,14 @@ function currentPhotoMarkup(product) {
     <img src="${pathToProductsImages}/${product.image}" alt="" />
 </figure>
 <article class="description">
-    <h1 class="product_title"><span>the name of picture:</span>${product.name}</h1>
-    <article class="stars"><span>the rating of picture:</span>
+    <h1 class="product_title">${product.name}</h1>
+    <article class="stars">
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-regular fa-star"></i>
-        <p class="price"><span>the price of picture:</span>${product.price} €</p>
+        <p class="price">${product.price} €</p>
         <a href="../cartScreen/index.html?id=${product.id}" class="add_to_cart">Add to cart</a>
     </article>
 </article>
