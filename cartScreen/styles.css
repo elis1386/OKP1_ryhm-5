@@ -4,12 +4,19 @@
   font-size: 62.5%;
   font-family: "Raleway";
   line-height: normal;
-  max-width: 1240px;
-  margin: 0 auto;
+  width: 1440px;
+  margin: 5rem auto;
 }
 /* HEADER */
+header {
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+}
 .header_bar {
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +46,7 @@
   text-align: center;
   text-decoration: none;
 }
+/* CART */
 .cart {
   margin-right: 2rem;
 }
@@ -50,7 +58,6 @@
   font-weight: 400;
   text-align: center;
 }
-
 .cart-text span {
   display: inline-block;
   width: 20px;
@@ -64,17 +71,23 @@
   top: -19px;
   font-size: 1rem;
 }
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.5);
-}
+/* CART DIALOG */
 
-.cart_dialog {
+.cart_dialog,
+.cart_dialog2 {
   position: fixed;
   top: -45%;
-  left: 72%;
-  width: 20%;
-  height: 20%;
+  left: 45%;
+  border: none;
+  background-color: #fff;
+  z-index: 99;
+  padding: 1rem 2rem;
+  text-align: end;
+  border-radius: 1rem;
+}
+.your_cart {
   text-align: center;
+  color: grey;
 }
 .empty_cart_title {
   font-size: 2rem;
@@ -86,39 +99,14 @@ dialog::backdrop {
   margin-bottom: 1rem;
 }
 .fa-face-smile-wink {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  color: #f5ae18;
 }
-/* .cart_dialog2 {
-  background-color: #fff;
-  width: 20%;
-  height: 20%;
-  left: 75%;
-  top: -55%;
-  z-index: 1;
-  position: fixed;
+.close_modal {
+  font-size: 1.5rem;
+  color: #f5ae18;
 }
-.cart_title {
-  font-size: 1rem;
-  font-weight: 600;
-}
-.cart_table_title {
-  display: flex;
-  gap: 1rem;
-  font-size: 1rem;
-} */
-/* .product_amount,
-tr {
-  display: flex;
-  gap: 2rem;
-  font-size: 1rem;
-}
-.product_amount_title,
-.total {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  font-weight: 600;
-} */
 
 /* Cart items */
 .shoping_cart {
@@ -166,7 +154,6 @@ tr {
 }
 .title {
   padding-top: 1rem;
-  line-height: 1rem;
   font-size: 2.2rem;
   font-family: "Open Sans";
   font-weight: 800;
@@ -244,7 +231,6 @@ hr {
 /* DIALOG */
 #confirm {
   width: 50%;
-  height: 80%;
   text-align: right;
   border: none;
 }
@@ -383,6 +369,7 @@ hr{
 }
 
 /* Footer */
+/* Footer */
 .footer_bar {
   height: 100px;
   display: flex;
@@ -412,15 +399,22 @@ hr{
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.5);
 }
+.contact_us {
+  text-align: end;
+  border: none;
+  width: 50%;
+  border-radius: 1rem;
+}
 .send_message_dialog {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   gap: 1rem;
 }
 .send_letter_form {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 .contact {
   font-size: 2rem;
@@ -442,14 +436,12 @@ dialog::backdrop {
   border-radius: 1rem;
   color: #ffffff;
   background-color: rgb(12, 184, 12);
-  padding: 1rem;
-  width: 60%;
+  padding: .5em;
   display: block;
   text-align: center;
-  margin: 1rem auto;
+  margin: 2rem auto 0;
+  text-decoration: none;
 }
 .send_message_btn:hover {
-  border: 1px solid rgb(12, 184, 12);
-  background-color: #ffffff;
-  color: rgb(12, 184, 12);
+  border: 1px solid  rgb(3, 52, 3);
 }

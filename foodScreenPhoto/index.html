@@ -95,7 +95,7 @@
         </li>
       </ul>
       <!-- Modal -->
-      <dialog id="dialog">
+      <dialog id="dialog" class="contact_us">
         <a
           href=""
           id="closeModal"
@@ -105,14 +105,14 @@
         ></a>
         <article class="send_message_dialog">
           <p class="contact">Contact us</p>
-          <form action="" class="send_letter_form">
+          <form action="submit" class="send_letter_form">
             <label for="email" class="email_label">Email address</label>
             <input type="email" class="email" />
             <label for="text-area" class="text-area"
               >Write your message here</label
             >
             <textarea class="message_text"></textarea>
-            <a class="send_message_btn">Send message</a>
+            <a href="" class="send_message_btn" id="closeModal" onclick="closeModal(); return false">Send message</a>
           </form>
         </article>
       </dialog>
