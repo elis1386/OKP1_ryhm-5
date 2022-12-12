@@ -76,7 +76,7 @@ header {
 .cart_dialog,
 .cart_dialog2 {
   position: fixed;
-  top: -45%;
+  top: -65%;
   left: 45%;
   border: none;
   background-color: #fff;
@@ -85,6 +85,11 @@ header {
   text-align: end;
   border-radius: 1rem;
 }
+.cart_dialog2{
+  top: -43%;
+  left: 45%;
+}
+
 .your_cart {
   text-align: center;
   color: grey;
@@ -360,6 +365,12 @@ dialog::backdrop {
   border: 1px solid  rgb(3, 52, 3);
 }
 
+@media screen and (max-width: 1024px) {
+  .cart_dialog {
+    top: -65%;
+    left: 74%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .main_photo{
@@ -375,6 +386,10 @@ dialog::backdrop {
     top: -60%;
     left: 70%;
   }
+  .cart_dialog {
+    top: -75%;
+    left: 73%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -386,6 +401,10 @@ dialog::backdrop {
   }
   .cart-text, .logo-text{
     display: none;
+  }
+  .cart_dialog {
+    top: -83%;
+    left: 73%;
   }
   .cart_dialog2 {
     top: -75%;
@@ -430,6 +449,11 @@ dialog::backdrop {
 }
 
 @media screen and (max-width: 375px) {
+
+  .cart_dialog {
+    top: -85%;
+    left: 73%;
+  }
   .cart_dialog2 {
     top: -77%;
     left: 70%;
