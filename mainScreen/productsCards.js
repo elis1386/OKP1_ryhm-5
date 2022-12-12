@@ -2,6 +2,7 @@
 const pathToImages = "image";
 const pathToProductsImages = `${pathToImages}/gallery`;
 const items = document.querySelector("#gallery");
+const cartItems = document.querySelector("#cart_products")
 
 
 function renderProducts(products)
@@ -22,17 +23,30 @@ function renderProducts(products)
 }
 
 
+
+
+
+
+
 function addToCartBtn() {
   increaseCount()
   const addToCart = document.querySelectorAll("figcaption[data-productId]");
   addToCart.forEach(function (btn) {
-    btn.addEventListener("click", addedProductHandler);
+    btn.addEventListener("click", addedProductToCart);
   });
 }
 
-function addedProductHandler(event) {
-  const productId = event.currentTarget.getAttribute("data-productId");
-  console.log(productId);
+function addedProductToCart(product) {
+/*   const productId = event.currentTarget.getAttribute("data-productId");
+  console.log(productId); */
+/*   cartItems.innerHTML =
+  `<figure class="cart_photo">
+            <img src="${pathToProductsImages}/${product.image}" alt="" />Photo
+          </figure>
+          <p>${product.name}</p>
+          <p>${product.price}</p>
+  ` */
+
 }
 
 renderProducts(products, items)

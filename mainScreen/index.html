@@ -14,11 +14,11 @@
   <body class="container">
     <header class="header_bar">
       <figure class="logo">
-        <i class="fa-brands fa-slack"></i>
+        <a href="../mainScreen/index.html"><i class="fa-brands fa-slack"></i></a> 
         <a href="../mainScreen/index.html" class="logo-text">LovePicture</a>
       </figure>
       <figure class="cart">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <a onclick="showCartModal(); return false"></a><i class="fa-solid fa-cart-shopping"></i></a>
         <a
           href="../cartPage/index.html"
           class="cart-text"
@@ -51,14 +51,38 @@
           onclick="closeModal(); return false"
           ><i class="fa-solid fa-xmark"></i
         ></a>
-        <article class="cart_row cart_header">
+        <section class="cart_products" id="cart_products">
+        <article class="cart_items">
           <figure class="cart_photo">
-            <img src="${pathToProductsImages}/${product.image}" alt="" />Photo
-        </figure>
-          <p>Name</p>
-          <p>Price</p>
+            <img src="./image/gallery/0.jpeg" alt="" />
+          </figure>
+          <figcaption class="cart_caption">
+            <p class="cart_name">"Cozy christmas appartments"</p>
+            <p class="cart_price">€200</p>
+          </figcaption>
         </article>
-<!-- this will be insert to cart products -->
+<hr>
+          
+        <article class="cart_items">
+          <figure class="cart_photo">
+            <img src="./image/gallery/1.jpeg" alt="" />
+          </figure>
+          <figcaption class="cart_caption">
+            <p class="cart_name">"Fairy tree"</p>
+            <p class="cart_price">€400</p>
+          </figcaption>
+        </article>
+<hr>
+        <article class="cart_items">
+          <figure class="cart_photo">
+            <img src="./image/gallery/2.jpeg" alt="" />
+          </figure>
+          <figcaption class="cart_caption">
+            <p class="cart_name">"Magic time is coming"</p>
+            <p class="cart_price">€150</p>
+          </figcaption>
+        </article>
+      </section>
       <article class="cart_total">
           Total sum:
           €<span class="cart_total_value">0</span>

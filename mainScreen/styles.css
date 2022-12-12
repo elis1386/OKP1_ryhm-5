@@ -76,8 +76,8 @@ header {
 .cart_dialog,
 .cart_dialog2 {
   position: fixed;
-  top: -60%;
-  left: 60%;
+  top: -45%;
+  left: 45%;
   border: none;
   background-color: #fff;
   z-index: 99;
@@ -108,17 +108,42 @@ header {
   color: #f5ae18;
 }
 /* not empty */
-.cart_row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.cart_items{
+  display: flex;
+  gap: 2rem;
+}
+.cart_products{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   gap: 1rem;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+}
+.cart_photo{
+   max-width: 100px;
+   max-height: 100px;
+}
+.cart_photo img{
+  width: 90px;
+  height: 100px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.cart_caption{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cart_name{
   font-size: 1rem;
+  text-align: left;
+
 }
-.cart_header {
-  font-weight: bold;
+.cart_price{
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 600;
 }
+
 .cart_total {
   font-weight: bold;
   font-size: 1rem;
@@ -346,6 +371,10 @@ dialog::backdrop {
   .item{
     width: 49%;
   }
+  .cart_dialog2 {
+    top: -60%;
+    left: 70%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -357,6 +386,10 @@ dialog::backdrop {
   }
   .cart-text, .logo-text{
     display: none;
+  }
+  .cart_dialog2 {
+    top: -75%;
+    left: 70%;
   }
   .main_photo{
     height: 900px;
@@ -397,6 +430,10 @@ dialog::backdrop {
 }
 
 @media screen and (max-width: 375px) {
+  .cart_dialog2 {
+    top: -77%;
+    left: 70%;
+  }
   .item{
     width: 96%;
   }
