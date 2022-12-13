@@ -13,9 +13,6 @@ function renderNewProductToCart(product) {
   <article class="about">
     <h1 class="title">${product.name}</h1>
   </article>
-   <article class="counter">
-    <input type="text" placeholder="1" class="quantity" />
-  </article>
   <article class="prices">
     <p class="amount">€${product.price}</p>
   </article>
@@ -80,7 +77,7 @@ function showConfirmModal() {
 
   const remove = document.querySelector("#remove")
   const cartItems = document.querySelector("#cart-items")
-  const confirmBtn = document.querySelector("#confirm")
+  const confirmBtn = document.querySelector("#confirmBtn")
   remove.addEventListener('click', function(){
     cartItems.style.opacity = "0";
     confirmBtn.style.opacity = "0";
