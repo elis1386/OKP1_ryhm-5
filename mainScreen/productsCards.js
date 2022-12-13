@@ -2,12 +2,10 @@
 const pathToImages = "image";
 const pathToProductsImages = `${pathToImages}/gallery`;
 const items = document.querySelector("#gallery");
-const cartItems = document.querySelector("#cart_products")
+const cartItems = document.querySelector("#cart_products");
 
-
-function renderProducts(products)
-{
-  products.forEach( product => {
+function renderProducts(products) {
+  products.forEach((product) => {
     items.innerHTML += `
     <figure class="item">
     <a href="../onePhotoPage/index.html?id=${product.id}" class="cart">
@@ -18,43 +16,46 @@ function renderProducts(products)
         cart</a>
     </figcaption>
   </figure>
-    `
+    `;
   });
 }
-
-
-
 
 
 
 
 function addToCartBtn() {
-  increaseCount()
+  increaseCount();
   const addToCart = document.querySelectorAll("figcaption[data-productId]");
   addToCart.forEach(function (btn) {
-    btn.addEventListener("click", addedProductToCart);
+    btn.addEventListener("click", addProductToCart(product));
   });
+
+  function addProductToCart(product) {
+   cartItems.innerHTML = ` <article class="cart_items">
+    <figure class="cart_photo">
+      <img src="${pathToProductsImages}/${product.image}" alt="" />
+    </figure>
+    <figcaption class="cart_caption">
+      <p class="cart_name">${product.name}</p>
+      <p class="cart_price">€${product.price}</p>
+    </figcaption>
+  </article>
+<hr>
+`;
+  }
+ 
 }
 
-function addedProductToCart(product) {
-/*   const productId = event.currentTarget.getAttribute("data-productId");
-  console.log(productId); */
-/*   cartItems.innerHTML =
-  `<figure class="cart_photo">
-            <img src="${pathToProductsImages}/${product.image}" alt="" />Photo
-          </figure>
-          <p>${product.name}</p>
-          <p>${product.price}</p>
-  ` */
-
-}
-
-renderProducts(products, items)
+renderProducts(products, items);
 
 
 
-
-
-
-
-
+/* 
+const productId = click.currentTarget.getAttribute("data-productId");
+console.log(productId);
+for (let product of products) {
+  if (product.id == productId) {
+    cartEl.insertAdjacentHTML("afterbegin", renderNewProductToCart(product));
+    break;
+  }
+} */
