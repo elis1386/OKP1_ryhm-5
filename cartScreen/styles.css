@@ -113,7 +113,7 @@ header {
   margin: 2rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  min-height: 700px;
 }
 .cart_header {
   height: 20%;
@@ -138,6 +138,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 .image-box {
   width: 25%;
@@ -145,7 +146,7 @@ header {
   margin: 1rem;
 }
 .cart_photo {
-  width: 100%;
+  width: 80%;
   border-radius: 1rem;
 }
 .about {
@@ -192,8 +193,8 @@ hr {
   margin-right: 5%;
 }
 .checkout {
-  margin-left: 65%;
-  width: 30%;
+ display: flex;
+ justify-content: end;
 }
 .total {
   width: 100%;
@@ -216,9 +217,9 @@ hr {
   font-weight: 900;
   color: #202020;
 }
-.button {
+.confirm_button {
   margin-top: 1rem;
-  width: 100%;
+  width: 20%;
   height: 50px;
   border: none;
   border-radius: 2rem;
@@ -226,6 +227,7 @@ hr {
   font-size: 1rem;
   font-weight: 600;
   color: #202020;
+  background-color:#f5ae18;
 }
 
 /* DIALOG */
@@ -329,46 +331,6 @@ hr{
   color: #f5ae18;
 }
 
-
-
-
-@media screen and (max-width: 768px) {
-  .cart_titles {
-    font-size: 1.4rem;
-  }
-  .action {
-    font-size: 1rem;
-  }
-  .title {
-    font-size: 1rem;
-    padding: 0;
-  }
-  .counter input {
-    width: 10%;
-    padding: 0.5rem;
-  }
-  .amount {
-    font-size: 1.4rem;
-    padding: 0;
-  }
-  .total h3 {
-    font-size: 1rem;
-  }
-  .total-amount {
-    font-size: 1.4rem;
-  }
-  .button {
-    margin-top: 1.4rem;
-  }
-  .fa-cart-shopping {
-    display: none;
-  }
-  .logo-text {
-    display: none;
-  }
-}
-
-/* Footer */
 /* Footer */
 .footer_bar {
   height: 100px;
@@ -445,3 +407,71 @@ dialog::backdrop {
 .send_message_btn:hover {
   border: 1px solid  rgb(3, 52, 3);
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+  .cart_dialog2 {
+    top: -60%;
+    left: 70%;
+  }
+  .image-box{
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .fa-slack, .fa-cart-shopping{
+    font-size: 4rem;
+  }
+  .cart-text, .logo-text{
+    display: none;
+  }
+  .cart_dialog2 {
+    top: -75%;
+    left: 70%;
+  }
+  .copy{
+    display: none;
+  }
+  .footer_bar{
+    justify-content: end;
+  }
+  .social_media{
+    
+    font-size: 4rem;
+  }
+  .image-box{
+    width: 50%;
+  }
+  .cart_photo{
+    width: 100%;
+  }
+  .title{
+    font-size: 4rem;
+    width: max-content;
+    margin-left: -93px;
+  }
+  .amount{
+    font-size: 4rem;
+
+  }
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+ 
+}
+
+@media screen and (max-width: 375px) {
+  .cart_dialog2 {
+    top: -77%;
+    left: 70%;
+  }
+}
+
