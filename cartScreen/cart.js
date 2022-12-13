@@ -3,6 +3,7 @@ const addBtn = document.querySelector("#addToCart");
 const cartEl = document.querySelector("#cart-items");
 const orderEL = document.querySelector("#order");
 
+
 function renderNewProductToCart(product) {
   return `
   <article class="image-box">
@@ -75,3 +76,15 @@ function showConfirmModal() {
   confirmModal.showModal();
   insertOrder();
 }
+
+
+  const remove = document.querySelector("#remove")
+  const cartItems = document.querySelector("#cart-items")
+  const confirmBtn = document.querySelector("#confirm")
+  remove.addEventListener('click', function(){
+    cartItems.style.opacity = "0";
+    confirmBtn.style.opacity = "0";
+    console.log('click')
+  })
+ 
+
