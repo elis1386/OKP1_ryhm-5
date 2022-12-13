@@ -73,7 +73,17 @@ header {
 }
 /* CART DIALOG */
 
-.cart_dialog,
+.cart_dialog{
+  position: fixed;
+  top: -65%;
+  left: 45%;
+  border: none;
+  background-color: #fff;
+  z-index: 99;
+  padding: 1rem 2rem;
+  text-align: end;
+  border-radius: 1rem;
+}
 .cart_dialog2 {
   position: fixed;
   top: -45%;
