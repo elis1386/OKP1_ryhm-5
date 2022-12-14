@@ -141,7 +141,7 @@ header {
   margin-top: 2rem;
 }
 .image-box {
-  width: 25%;
+  width: 45%;
   text-align: center;
   margin: 1rem;
 }
@@ -193,8 +193,8 @@ hr {
   margin-right: 5%;
 }
 .checkout {
- display: flex;
- justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 .total {
   width: 100%;
@@ -227,7 +227,8 @@ hr {
   font-size: 1rem;
   font-weight: 600;
   color: #202020;
-  background-color:#f5ae18;
+  background-color: #f5ae18;
+  text-decoration: none;
 }
 
 /* DIALOG */
@@ -246,7 +247,6 @@ hr {
   font-size: 2.4rem;
   margin: 1rem;
   font-weight: 600;
-
 }
 .fa-xmark {
   font-size: 2rem;
@@ -257,7 +257,6 @@ hr {
   text-align: center;
   font-size: 2.4rem;
   width: 70%;
-
 }
 .confirm_text2 {
   margin-top: 5rem;
@@ -277,7 +276,7 @@ hr {
   display: flex;
   margin: 1rem;
 }
-.product_photo{
+.product_photo {
   text-align: center;
 }
 .product_photo img {
@@ -286,48 +285,50 @@ hr {
 .product_text {
   width: 90%;
 }
-.product_text h3, p{
+.product_text h3,
+p {
   width: 100%;
   font-size: 2rem;
   text-align: initial;
   margin-bottom: 1rem;
   color: #000;
-
 }
-.product_text p{
+.product_text p {
   width: 100%;
   font-size: 2rem;
   text-align: initial;
   margin-top: 1rem;
-
 }
-.stars
-{
+.stars {
   color: #f5ae18;
   font-size: 2rem;
   text-align: initial;
 }
-hr{
+hr {
   width: 100%;
 }
-.confirmattion_action{
+.confirmattion_action {
   display: flex;
   gap: 5rem;
   text-align: center;
 }
-.print, .save{
+.print,
+.save {
   font-size: 2.4rem;
   margin-top: 2rem;
   color: rgb(63, 62, 62);
 }
-.print_title, .save_title{
+.print_title,
+.save_title {
   font-size: 1.4rem;
-  margin: .5em 0 2rem 0;
+  margin: 0.5em 0 2rem 0;
 }
-.print_hover i:hover, .print_hover:hover{
+.print_hover i:hover,
+.print_hover:hover {
   color: #f5ae18;
 }
-.save_hover i:hover, .save_hover:hover{
+.save_hover i:hover,
+.save_hover:hover {
   color: #f5ae18;
 }
 
@@ -398,65 +399,60 @@ dialog::backdrop {
   border-radius: 1rem;
   color: #ffffff;
   background-color: rgb(12, 184, 12);
-  padding: .5em;
+  padding: 0.5em;
   display: block;
   text-align: center;
   margin: 2rem auto 0;
   text-decoration: none;
 }
 .send_message_btn:hover {
-  border: 1px solid  rgb(3, 52, 3);
+  border: 1px solid rgb(3, 52, 3);
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   .cart_dialog2 {
     top: -60%;
     left: 70%;
   }
-  .image-box{
-    width: 35%;
+  .image-box {
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 425px) {
-
-  .fa-slack, .fa-cart-shopping{
+  .fa-slack,
+  .fa-cart-shopping {
     font-size: 4rem;
   }
-  .cart-text, .logo-text{
+  .cart-text,
+  .logo-text {
     display: none;
   }
   .cart_dialog2 {
     top: -75%;
     left: 70%;
   }
-  .copy{
+  .copy {
     display: none;
   }
-  .footer_bar{
+  .footer_bar {
     justify-content: end;
   }
-  .social_media{
-    
+  .social_media {
     font-size: 4rem;
   }
-  .image-box{
-    width: 50%;
+  .image-box {
+    width: 90%;
   }
-  .cart_photo{
+  .cart_photo {
     width: 100%;
   }
-  .title{
-    font-size: 3rem;
+  .title {
+    font-size: 5rem;
     width: max-content;
-    margin-left: -93px;
   }
-  .amount{
-    font-size: 4rem;
-
+  .amount {
+    font-size: 5rem;
   }
   .cart-items {
     display: flex;
@@ -464,8 +460,21 @@ dialog::backdrop {
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-}
- 
+  }
+  .confirm_button {
+    width: 30%;
+    height: 100px;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .about{
+    width: auto;
+  }
+  .cart_titles,.action{
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -474,4 +483,3 @@ dialog::backdrop {
     left: 70%;
   }
 }
-
