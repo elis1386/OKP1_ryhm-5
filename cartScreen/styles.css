@@ -450,7 +450,7 @@ dialog::backdrop {
     width: 100%;
   }
   .title{
-    font-size: 4rem;
+    font-size: 3rem;
     width: max-content;
     margin-left: -93px;
   }
