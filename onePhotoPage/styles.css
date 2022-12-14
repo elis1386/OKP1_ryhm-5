@@ -135,7 +135,7 @@ header {
   font-size: 1rem;
   margin-right: 1rem;
 }
-.stars span{
+.stars span {
   color: grey;
   font-size: 1rem;
 }
@@ -167,7 +167,6 @@ header {
   display: inline-block;
   margin-top: 3rem;
 }
-
 
 /* Footer */
 .footer_bar {
@@ -236,12 +235,73 @@ dialog::backdrop {
   border-radius: 1rem;
   color: #ffffff;
   background-color: rgb(12, 184, 12);
-  padding: .5em;
+  padding: 0.5em;
   display: block;
   text-align: center;
   margin: 2rem auto 0;
   text-decoration: none;
 }
 .send_message_btn:hover {
-  border: 1px solid  rgb(3, 52, 3);
+  border: 1px solid rgb(3, 52, 3);
+}
+
+@media screen and (max-width: 768px) {
+  .cart_dialog2 {
+    top: -60%;
+    left: 70%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header_bar {
+    height: 120px;
+  }
+  .fa-slack,
+  .fa-cart-shopping {
+    font-size: 4rem;
+  }
+  .cart-text,
+  .logo-text {
+    display: none;
+  }
+  .cart_dialog2 {
+    top: -75%;
+    left: 70%;
+  }
+  .current_photo {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .photo{
+    margin: 3rem 2rem;
+    width: 95%;
+
+  }
+  .photo img {
+    height: 600px;
+  }
+  .description{
+    width: 95%;
+  }
+  .description > * {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .copy {
+    display: none;
+  }
+  .footer_bar {
+    justify-content: end;
+  }
+  .social_media {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cart_dialog2 {
+    top: -77%;
+    left: 70%;
+  }
 }
