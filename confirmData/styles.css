@@ -361,6 +361,10 @@ dialog::backdrop {
     top: -75%;
     left: 70%;
   }
+  .cart_dialog{
+    top: -85%;
+    left: 70%;
+  }
   .copy{
     display: none;
   }
@@ -393,7 +397,7 @@ dialog::backdrop {
     margin-top: 2rem;
   }
   #confirm{
-    top: -63%;
+    top: -50%;
   }
 }
 

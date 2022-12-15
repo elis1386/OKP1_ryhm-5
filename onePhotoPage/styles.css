@@ -73,11 +73,22 @@ header {
 }
 /* CART DIALOG */
 
-.cart_dialog,
+
 .cart_dialog2 {
   position: fixed;
   top: -45%;
   left: 45%;
+  border: none;
+  background-color: #fff;
+  z-index: 99;
+  padding: 1rem 2rem;
+  text-align: end;
+  border-radius: 1rem;
+}
+.cart_dialog{
+  position: fixed;
+  top: -70%;
+  left: 75%;
   border: none;
   background-color: #fff;
   z-index: 99;
@@ -109,7 +120,7 @@ header {
 }
 /* Main section */
 .photo {
-  width: 50%;
+  width: 70%;
   margin: auto 2rem;
 }
 .description {
@@ -146,7 +157,7 @@ header {
 }
 .photo img {
   display: block;
-  width: 80%;
+  width: 90%;
   height: 600px;
   object-fit: cover;
   margin: 1rem auto;
@@ -269,6 +280,10 @@ dialog::backdrop {
   }
   .cart_dialog2 {
     top: -75%;
+    left: 70%;
+  }
+  .cart_dialog{
+    top: -85%;
     left: 70%;
   }
   .current_photo {
