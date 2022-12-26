@@ -5,6 +5,7 @@
   font-family: "Raleway";
   line-height: normal;
   width: 1440px;
+  height: 800px;
   margin: 5rem auto;
 }
 /* HEADER */
@@ -73,7 +74,6 @@ header {
 }
 /* CART DIALOG */
 
-.cart_dialog,
 .cart_dialog2 {
   position: fixed;
   top: -45%;
@@ -84,6 +84,17 @@ header {
   padding: 1rem 2rem;
   text-align: end;
   border-radius: 1rem;
+}
+.cart_dialog{
+  position: fixed;
+  top: -70%;
+  left: 75%;
+  border: none;
+  background-color: #fff;
+  z-index: 99;
+  padding: 1rem 2rem;
+  text-align: end;
+  border-radius: 1rem
 }
 .your_cart {
   text-align: center;
@@ -108,37 +119,36 @@ header {
   color: #f5ae18;
 }
 /* not empty */
-.cart_items{
+.cart_items {
   display: flex;
   gap: 2rem;
 }
-.cart_products{
+.cart_products {
   display: flex;
   flex-direction: column;
   width: 300px;
   gap: 1rem;
 }
-.cart_photo{
-   max-width: 100px;
-   max-height: 100px;
+.cart_photo {
+  max-width: 100px;
+  max-height: 100px;
 }
-.cart_photo img{
+.cart_photo img {
   width: 90px;
   height: 100px;
   overflow: hidden;
   object-fit: cover;
 }
-.cart_caption{
+.cart_caption {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.cart_name{
+.cart_name {
   font-size: 1rem;
   text-align: left;
-
 }
-.cart_price{
+.cart_price {
   font-size: 1rem;
   text-align: left;
   font-weight: 600;
@@ -149,7 +159,6 @@ header {
   font-size: 1rem;
   text-align: right;
 }
-
 
 /* MAIN SCREEN */
 
@@ -200,14 +209,13 @@ button:before {
 .random_photo {
   margin-top: 13rem;
 }
-.gallery{
+.gallery {
   margin: 4rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   gap: 1rem;
-
 }
 .gallery_text {
   color: black;
@@ -341,88 +349,92 @@ dialog::backdrop {
   border-radius: 1rem;
   color: #ffffff;
   background-color: rgb(12, 184, 12);
-  padding: .5em;
+  padding: 0.5em;
   display: block;
   text-align: center;
   margin: 2rem auto 0;
   text-decoration: none;
 }
 .send_message_btn:hover {
-  border: 1px solid  rgb(3, 52, 3);
+  border: 1px solid rgb(3, 52, 3);
 }
 
-
-
 @media screen and (max-width: 768px) {
-  .main_photo{
+  .main_photo {
     height: 900px;
   }
-  .main_text{
+  .main_text {
     top: 30%;
   }
-  .item{
+  .item {
     width: 49%;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .header_bar{
+  .header_bar {
     height: 120px;
   }
-  .fa-slack, .fa-cart-shopping{
+  .fa-slack,
+  .fa-cart-shopping {
     font-size: 4rem;
   }
-  .cart-text, .logo-text{
+  .cart-text,
+  .logo-text {
     display: none;
   }
-  .main_photo{
+  .cart_dialog2 {
+    top: -75%;
+    left: 70%;
+  }
+  .cart_dialog{
+    top: -85%;
+    left: 70%;
+  }
+  .main_photo {
     height: 900px;
   }
-  .main_text{
+  .main_text {
     top: 20%;
     width: 60%;
     font-size: 6rem;
   }
-  .searchBar{
+  .searchBar {
     margin: 15% 20% 0;
   }
-  .search_input{
+  .search_input {
     padding: 2rem;
   }
-  .search_btn{
+  .search_btn {
     height: 50px;
     width: 50px;
   }
-  .gallery_title{
+  .gallery_title {
     margin-top: 18rem;
   }
-   .item{
+  .item {
     width: 98%;
   }
-  .item__img{
+  .item__img {
     height: 900px;
   }
-  .copy{
+  .copy {
     display: none;
   }
-  .footer_bar{
+  .footer_bar {
     justify-content: end;
   }
-  .social_media{
-    
+  .social_media {
     font-size: 4rem;
   }
-
 }
 
 @media screen and (max-width: 375px) {
-  .item{
+  .item {
     width: 96%;
   }
-  .item__img{
+  .item__img {
     height: 900px;
     padding-top: 1rem;
   }
-
-
 }

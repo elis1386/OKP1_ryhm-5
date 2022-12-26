@@ -7,6 +7,7 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="styles.css" />
+
     <script
       src="https://kit.fontawesome.com/fb42ae3684.js"
       crossorigin="anonymous"></script>
@@ -15,7 +16,9 @@
     <!-- HEADER -->
     <header class="header_bar">
       <figure class="logo">
-        <a href="../mainScreen/index.html"><i class="fa-brands fa-slack"></i></a>
+        <a href="../mainScreen/index.html"
+          ><i class="fa-brands fa-slack"></i
+        ></a>
         <a href="../mainScreen/index.html" class="logo-text">LovePicture</a>
       </figure>
       <figure class="cart">
@@ -44,26 +47,33 @@
         </article>
       </dialog>
     </header>
-    <!-- CART -->
-    <section class="shoping_cart">
-      <article class="cart_header">
-        <h3 class="cart_titles">Shopping Cart</h3>
-        <h5 class="action" id="remove">Remove</h5>
-      </article>
-
-      <!-- PRODUCT INTO CART -->
-      <section class="cart-items" id="cart-items">
-        <!-- Here should be render cart products -->
-      </section>
-      <section class="checkout">
-      <button  class="confirm_button" id="confirmBtn" onclick="window.location.href ='../confirmData/index.html'">
-          Confirm
-        </button>
-      </section>
+<section class="form_text">
+    <h1>Could you please fill out the form below for our cooperationg:</h1>
+</section>
+    <section class="confirm_form">
+      <form class="form">
+        <article class="form_item">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-input"/>
+        </article>
+        <article class="form_item">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-input"/>
+        </article>
+        <article class="form_item">
+            <label class="form-label">Phone</label>
+            <input type="phone" class="form-input"/>
+        </article>
+        <article class="form_item">
+            <label class="form-label">Home address</label>
+            <input type="phone" class="form-input-text"/>
+        </article>
+        <button type="submit" class="btn_submit" onclick="showConfirmModal(); return false">Submit</button>
+      </form>
     </section>
 
     <!-- CONFIRM DIALOG -->
-    <dialog id="confirm">
+<dialog id="confirm">
       <a
         href="../mainScreen/index.html"
         id="closeModal"
@@ -78,8 +88,23 @@
         </p>
         <section class="order_info">
           <p id="order" class="order_info_title">Items ordered</p>
-          <!-- here the order info -->
         </section>
+        <article class="order_info_product">
+            <figure class="product_photo">
+              <img src="../mainScreen/image/gallery/0.jpeg" alt="" />
+            </figure>
+            <figcaption class="product_text">
+              <h3>Cozy Christmas appartment</h3>
+              <article class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>200€</p>
+              </article>
+            </figcaption>
+          </article>
         <section class="confirmattion_action">
           <article class="print_hover">
             <figure class="print"><i class="fa-solid fa-print"></i></figure>
@@ -127,13 +152,19 @@
               >Write your message here</label
             >
             <textarea class="message_text"></textarea>
-            <a href="" class="send_message_btn" id="closeModal" onclick="closeModal(); return false">Send message</a>
+            <a
+              href=""
+              class="send_message_btn"
+              id="closeModal"
+              onclick="closeModal(); return false"
+              >Send message</a
+            >
           </form>
         </article>
       </dialog>
     </footer>
+    <script src="form.js"></script>
     <script src="../mainScreen/main.js"></script>
     <script src="../mainScreen/products.js"></script>
-    <script src="cart.js"></script>
   </body>
 </html>
